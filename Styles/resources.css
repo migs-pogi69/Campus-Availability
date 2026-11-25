@@ -1,0 +1,177 @@
+/* Resources admin page (scoped to .res-page) */
+.res-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.res-page h1 {
+  color: var(--navy);
+}
+
+.res-page .sub {
+  color: var(--muted);
+  margin: 4px 0 20px;
+}
+
+.res-page .filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.res-page input,
+.res-page select,
+.res-page textarea {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.res-page .filters button,
+.res-page .save {
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.res-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.res-table-box {
+  flex: 1;
+  background: #f4f3fa;
+  border-radius: 16px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.res-table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.res-table-box th,
+.res-table-box td {
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.res-table-box tr.editing input,
+.res-table-box tr.editing select {
+  width: 100%;
+}
+
+.res-form-box {
+  width: 250px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.res-form-box label {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.res-form-box input,
+.res-form-box select,
+.res-form-box textarea {
+  width: 100%;
+}
+
+.res-form-box .btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.res-form-box .cancel,
+.res-page .save-sm {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
+.res-badge {
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.res-badge.available {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.res-badge.booked {
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+
+.res-badge.repair {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+.res-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.res-actions button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+}
+
+.res-pager {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.res-pager a {
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.res-pager a.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.res-error {
+  background: var(--red-soft);
+  color: var(--red);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+  .res-layout {
+    flex-direction: column;
+  }
+
+  .res-form-box {
+    width: 100%;
+  }
+}

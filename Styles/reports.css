@@ -1,0 +1,141 @@
+.rep-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.rep-page h1 {
+  color: var(--navy);
+  font-size: 28px;
+}
+.rep-sub {
+  color: var(--muted);
+  margin: 4px 0 20px;
+}
+.rep-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.rep-card h3 {
+  color: var(--navy);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.rep-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.rep-label {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.rep-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rep-delta {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+.rep-delta.good {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.rep-delta.bad {
+  background: var(--red-soft);
+  color: var(--red);
+}
+.rep-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.rep-line {
+  width: 100%;
+  height: auto;
+}
+.rep-line text {
+  font-size: 11px;
+  fill: var(--muted);
+}
+.rep-line .grid {
+  stroke: var(--border);
+}
+.rep-line polyline {
+  fill: none; stroke:
+  var(--primary);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.rep-line .prev {
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+}
+.rep-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.heat {
+  display: grid;
+  grid-template-columns: 36px repeat(7, 1fr);
+  gap: 5px; align-items: center;
+}
+.heat .hl {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+}
+.heat .hd {
+  font-size: 12px;
+  color: var(--navy);
+}
+.heat .cell {
+  height: 24px;
+  border-radius: 4px;
+  background: var(--primary);
+  opacity: var(--a);
+}
+.rep-bars {
+  max-width: 560px;
+}
+.bar-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 40px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.bar-track {
+  background: var(--primary-soft);
+  border-radius: 4px;
+  height: 12px;
+  overflow: hidden;
+}
+.bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+}
+.bar-n {
+  color: var(--navy);
+}
+@media (max-width: 800px) {
+  .rep-stats { grid-template-columns: 1fr 1fr; }
+  .rep-row { grid-template-columns: 1fr; }
+}
